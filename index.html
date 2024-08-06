@@ -57,10 +57,9 @@
     <header class="header">
       <!-- logo-box -->
       <div class="header__logo-box">
-        <img src="images/logo-white.png" alt="logo" class="header--logo" />
+        <img src="images/logo-white.png" alt="Logo" class="header__logo" />
       </div>
 
-      <!-- text-box -->
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main">Outdoors</span>
@@ -419,6 +418,7 @@
                     id="email"
                     required
                   />
+
                   <label for="email" class="form__label">Email address</label>
                 </div>
                 <div class="form__group u-margin-bottom-medium">
@@ -465,11 +465,20 @@
     <!-- footer-section-start -->
     <footer class="footer">
       <div class="footer__logo-box">
-        <img
-          src="images/logo-green-2x.png"
-          alt="Full logo"
-          class="footer__logo"
-        />
+        <picture class="footer__logo">
+          <source
+            srcset="
+              images/logo-green-small-1x.png 1x,
+              images/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="images/logo-green-1x.png 1x, images/logo-green-2x.png 2x"
+            alt="Full logo"
+            src="images/logo-green-2x.png"
+          />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
